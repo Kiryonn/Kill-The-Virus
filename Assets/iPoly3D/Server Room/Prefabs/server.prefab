@@ -38,8 +38,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoConstraintSelection: 1
-  selectedConstraints: []
+  autoConstraintSelection: 0
+  selectedConstraints:
+  - {fileID: 7656894155701085391}
+  - {fileID: 8023132477714941094}
 --- !u!114 &7928157512848383522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,8 +56,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 7033148754226172750}
   manipulationType: 3
-  twoHandedManipulationType: 7
-  allowFarManipulation: 0
+  twoHandedManipulationType: 0
+  allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
@@ -68,7 +70,7 @@ MonoBehaviour:
   moveLerpTime: 0.001
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
-  enableConstraints: 1
+  enableConstraints: 0
   constraintsManager: {fileID: 3586038393321965943}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
@@ -107,6 +109,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 229f6dba71e5f9b488ce133070ddf156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7001759413250650473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029352452461828775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea5f249786382754b8635a1375f7b76c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: 3
+  executionOrder: 0
+  faceAway: 0
+--- !u!114 &7656894155701085391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029352452461828775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149fa3ae453128b41940b5caa905f8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: 3
+  executionOrder: 0
+  constraintOnMovement: 0
+  useLocalSpaceForConstraint: 0
+--- !u!114 &8023132477714941094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029352452461828775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149fa3ae453128b41940b5caa905f8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: 3
+  executionOrder: 0
+  constraintOnMovement: 0
+  useLocalSpaceForConstraint: 0
 --- !u!1001 &5281328138168934334
 PrefabInstance:
   m_ObjectHideFlags: 0
