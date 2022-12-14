@@ -5,22 +5,36 @@ using UnityEngine;
 
 public class Server : MonoBehaviour
 {
-    public bool isUnderAttack;
-    void Start()
-    {
-        isUnderAttack = false;
-    }
+	public bool isUnderAttack;
+	public Material normalMaterial;
+	public Material hackedMaterial;
+	MeshRenderer myMaterial;
+	Cable grabbed = null;
+	void Start()
+	{
+		isUnderAttack = false;
+		myMaterial.GetComponent<MeshRenderer>();
+	}
 
-    public void repare() 
-    {
-        if (isUnderAttack) { Debug.Log("reparé"); }
-    }
+	public void repare()
+	{
+		if (isUnderAttack) {
+			transform.Find("Cables").gameObject.SetActive(true);
+			myMaterial.material = hackedMaterial;
+		}
+	}
+
+	public void repared() {
+		isUnderAttack = false;
+		transform.Find("Cables").gameObject.SetActive(false);
+		myMaterial.material = normalMaterial;
+	}
 
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	// Update is called once per frame
+	void Update()
+	{
+
+	}
 }
