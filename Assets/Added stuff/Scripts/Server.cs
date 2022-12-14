@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class server : MonoBehaviour
+public class Server : MonoBehaviour
 {
     public bool isUnderAttack;
     void Start()
@@ -12,7 +12,7 @@ public class server : MonoBehaviour
 
     public void repare() 
     { 
-
+        
     }
 
     // Update is called once per frame
