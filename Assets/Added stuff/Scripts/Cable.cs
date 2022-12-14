@@ -4,5 +4,4 @@ public class Cable : MonoBehaviour
 {
     public int index;
 
-	
 }

@@ -7,7 +7,6 @@ public class Server : MonoBehaviour
 {
 	public bool isUnderAttack;
 	public Material normalMaterial;
-	public Material hackedMaterial;
 	MeshRenderer myMaterial;
 	Cable grabbed = null;
 	void Start()
@@ -16,15 +15,8 @@ public class Server : MonoBehaviour
 		myMaterial.GetComponent<MeshRenderer>();
 	}
 
-	public void repare()
-	{
-		if (isUnderAttack) {
-			transform.Find("Cables").gameObject.SetActive(true);
-			myMaterial.material = hackedMaterial;
-		}
-	}
 
-	public void repared() {
+	public void repare() {
 		isUnderAttack = false;
 		transform.Find("Cables").gameObject.SetActive(false);
 		myMaterial.material = normalMaterial;
