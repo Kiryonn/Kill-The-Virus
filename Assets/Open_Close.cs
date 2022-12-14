@@ -14,9 +14,17 @@ public class Open_Close : MonoBehaviour
     }
 
     public void click() 
-    { 
-    
-        transform.rotation = Quaternion.AngleAxis(90f,new Vector3(0,1,0));
+    {
+        if (open)
+        {
+            transform.Rotate(new Vector3(0, 90, 0));
+        }
+        else
+        {
+            transform.Rotate(new Vector3(0, -90, 0));
+        }
+        open = !open;
+
 
     }
 
