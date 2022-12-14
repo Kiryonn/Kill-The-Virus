@@ -7,12 +7,12 @@ public class Server : MonoBehaviour
 {
 	public bool isUnderAttack;
 	public Material normalMaterial;
-	MeshRenderer myMaterial;
+	public MeshRenderer myMaterial;
 	Cable grabbed = null;
 	void Start()
 	{
 		isUnderAttack = false;
-		myMaterial.GetComponent<MeshRenderer>();
+		//myMaterial.GetComponent<MeshRenderer>();
 	}
 
 
